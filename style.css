@@ -1,0 +1,11 @@
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        border: red 1px solid;
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        border: cyan 1px solid;
+    }
+}
