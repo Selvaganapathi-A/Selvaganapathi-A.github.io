@@ -1,3 +1,6 @@
+@import url("./light.css");
+@import url("./dark.css");
+
 *::before,
 *,
 *::after {
@@ -21,10 +24,16 @@ body {
     min-height: 100svh;
     padding: 0.5em;
     background-image: linear-gradient(
-        to bottom right in hsl,
-        light-dark(hsl(270 100% 70%), hsl(270 100% 20%)),
-        light-dark(hsl(300 100% 70%), hsl(300 100% 20%))
+        15deg in hsl,
+        var(--background_gradient_color-001),
+        var(--background_gradient_color-002),
+        var(--background_gradient_color-001)
     );
+    background-repeat: repeat;
+    background-size: 5em 5em;
+    background-clip: border-box;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h1,
@@ -47,10 +56,11 @@ p {
 a {
     color: inherit;
     font-style: italic;
+    font-size: 0.95em;
     text-underline-offset: clamp(1px, 0.4vw, 0.4em);
-    text-decoration-color: light-dark(dimgray, whitesmoke);
+    text-decoration-color: currentColor;
     transition: font-style 100ms linear;
-    text-shadow: 0 0 1em currentColor;
+    /* text-shadow: 0 0 1em currentColor; */
 }
 
 a:hover,
