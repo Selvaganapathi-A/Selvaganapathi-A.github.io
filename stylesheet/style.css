@@ -35,11 +35,12 @@ p {
     line-height: 1.5;
 }
 
-h1,h2 {
+h1,
+h2 {
     text-align: center;
 }
 
-p{
+p {
     text-indent: 4ch;
 }
 
@@ -49,9 +50,10 @@ a {
     text-underline-offset: clamp(1px, 0.4vw, 0.4em);
     text-decoration-color: light-dark(dimgray, whitesmoke);
     transition: font-style 100ms linear;
-    text-shadow: 0 0 1em currentColor ;
+    text-shadow: 0 0 1em currentColor;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration-color: red;
 }
